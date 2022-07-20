@@ -7,6 +7,14 @@ title: createAsyncStoragePersister
 
 This utility comes as a separate package and is available under the `'@tanstack/query-async-storage-persister'` import.
 
+```bash
+npm install @tanstack/query-async-storage-persister @tanstack/react-query-persist-client
+```
+or
+```bash
+yarn add @tanstack/query-async-storage-persister @tanstack/react-query-persist-client
+```
+
 ## Usage
 
 - Import the `createAsyncStoragePersister` function
@@ -17,7 +25,7 @@ This utility comes as a separate package and is available under the `'@tanstack/
 ```ts
 import AsyncStorage from '@react-native-async-storage/async-storage'
 import { persistQueryClient } from '@tanstack/react-query-persist-client'
-import { createSyncStoragePersister } from '@tanstack/query-async-storage-persister'
+import { createAsyncSyncStoragePersister } from '@tanstack/query-async-storage-persister'
 
 const queryClient = new QueryClient({
   defaultOptions: {
